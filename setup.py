@@ -8,7 +8,7 @@ def read(fname):
     with open(fname, 'rU' if python_2 else 'r') as fhandle:
         return fhandle.read()
 
-version = '0.1.3'
+version = '0.1.4'
 required = [req.strip() for req in read('requirements.txt').splitlines() if req.strip()]
 setup(
     name='htu21df',
@@ -25,7 +25,7 @@ setup(
     download_url='https://github.com/MSeal/htu21df_sensor/tarball/v' + version,
     keywords=['sensors', 'raspberry_pi', 'adafruit', 'scripting'],
     classifiers=[
-        'Development Status :: 4 - Beta Development Status',
+        'Development Status :: 4 - Beta',
         'Topic :: Utilities',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',

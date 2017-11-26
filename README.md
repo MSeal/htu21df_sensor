@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MSeal/htu21df_sensor.svg?branch=master)](https://travis-ci.org/MSeal/htu21df_sensor)
+
 # htu21df Sensor Library
 A lightweight library for talking to an htu21df sensor over i2c. Supports python 2 or 3.
 
