@@ -12,6 +12,18 @@ Or from any download, install with setup:
 
     python setup.py install
 
+## How to Use
+It's very straight forward.
+
+	from htu21 import HTU21
+    htu = HTU21()
+    print(htu.read_temperature())
+    print(htu.read_humidity())
+
+Running the htu file directly will print the above results.
+
+	python -m htu21.htu21
+
 ## Why?
 It turns out that the expected interface with the htu21df sensor is a little off the standard i2c library interfaces. To get it to work on a raspberry pi took a lot of headbanging and soul searching. So instead of having others repeat the pain, I made this library which makes (semi) direct calls to the i2c io which match the sensor perfectly. I also added in a bunch of internal patches for python2 vs python3 so both can work without rewriting all the byte-level interfaces.
 
